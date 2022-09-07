@@ -10,11 +10,11 @@ repos:
     -   id: check-added-large-files
 
 
--   repo: local
-    hooks:
-    -   id: pytest-check
-        name: Pytest Runner
-        entry: pytest       # What you want to call here is, declared
-        language: system
-        pass_filenames: false
-        always_run: true
+#-   repo: local
+#    hooks:
+#    -   id: pytest-check
+#        name: Pytest Runner
+#        entry: pytest       # What you want to call here is, declared
+#        language: system
+#        pass_filenames: false
+#        always_run: true
