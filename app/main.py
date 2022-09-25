@@ -46,6 +46,7 @@ async def prediction(file:UploadFile=File(...),settings:Settings = Depends(get_s
     except:
         raise HTTPException(detail="Invalid image",status_code=400)
 
+        
     prediction=pytesseract.image_to_string(img)
     return {"Text":prediction}
 
@@ -70,3 +71,4 @@ async def img_view(file:UploadFile=File(...),settings:Settings = Depends(get_set
     img.save(destination)
 
     return destination
+
